@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-mongoose.connect('mongodb+srv://blog:RD8paskYC8Ayj09u@cluster0.pflplid.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://blog:ZY5HJhTXssyNmByB@cluster0.3flz1qo.mongodb.net/?retryWrites=true&w=majority');
 
 app.post('/register', async (req,res) => {
   const {username,password} = req.body;
@@ -135,4 +135,6 @@ app.get('/post/:id', async (req, res) => {
 })
 
 app.listen(4000);
-//
+//ZY5HJhTXssyNmByB
+// mongodb+srv://blog:<ZY5HJhTXssyNmByB>@cluster0.3flz1qo.mongodb.net/?retryWrites=true&w=majority
+// https://www.youtube.com/watch?v=7kHqE2xh-xQ
